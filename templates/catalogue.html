@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav main-nav">
+            <a href="{{ url_for('index') }}" class="link" rel="stylesheet" type="text/css">
+                Homepage
+            </a>
+            <a href="{{ url_for('userlogin') }}" class="link">Login</a>
+            <a href="{{ url_for('catalogue') }}" class="link" rel="stylesheet" type="text/css">Catalogue</a>
+            <a href="{{ url_for('checkout') }}" class="link" rel="stylesheet" type="text/css">
+                Checkout
+            </a>
+        </nav>
+    </header>
+    <div class="center-flex">
+        <div>
+            <img src="{{ url_for('static', filename='Icons/magazines.jpg')}}" alt="magazines" class="user-icon"
+                width="300px" height="300px">
+            <h3>Magazines</h3>
+            <p>To catch up on the news.</p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/mag_cover.png')}}" alt="Vogue" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+            <img src="{{ url_for('static', filename='images/mcover1.png')}}" alt="Time" class="user-icon" width="100px"
+                height="100px">
+            <input class=button value="checkout" type="Submit">
+            <img src="{{ url_for('static', filename='images/magcover2.jpg')}}" alt="Time" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='Icons/books.png')}}" alt="magazines" width="300px" height="300px">
+            <h3>Books</h3>
+            <p>For all your reading needs.</p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/bcover2.jpg')}}" alt="Look at me" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+            <img src="{{ url_for('static', filename='images/bcover3.jpg')}}" alt="Histories" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+            <img src="{{ url_for('static', filename='images/bcover1.jpg')}}" alt="magazines" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='Icons/movies.png')}}" alt="magazines" width="300px" height="300px">
+            <h3>Movies</h3>
+            <p>Watch past and current cinema in the comfort of your home.</p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/mcover.jpg')}}" alt="Look at me" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+            <img src="{{ url_for('static', filename='images/mcover2.jpg')}}" alt="Histories" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+            <img src="{{ url_for('static', filename='images/moviecover.jpg')}}" alt="magazines" class="user-icon"
+                width="100px" height="100px">
+            <input class=button value="checkout" type="Submit">
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

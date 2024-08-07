@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav main-nav">
+            <a href="{{ url_for('index') }}" class="link" rel="stylesheet" type="text/css">
+                Homepage
+            </a>
+            <a href="{{ url_for('userlogin') }}" class="link">Login</a>
+            <a href="{{ url_for('catalogue') }}" class="link" rel="stylesheet" type="text/css">Catalogue</a>
+            <a href="{{ url_for('checkout') }}" class="link" rel="stylesheet" type="text/css">
+                Checkout
+            </a>
+        </nav>
+    </header>
+
+    <a id="login">
+        <div>
+            <form class="center-flex" method="post" action="/">
+                <label for="login">Username</label>
+
+                <textarea oninput="replace()" rows="1%" cols="6%" type="text" name="feedback"
+                    value="Type feedback here"></textarea>
+                <br>
+                <label for="login">Password</label>
+
+                <textarea oninput="replace()" rows="1%" cols="6%" type="text" name="feedback"
+                    value="Type feedback here"></textarea>
+                <br>
+                <label for="login">Librarian ID(optional)</label>
+
+                <textarea oninput="replace()" rows="1%" cols="6%" type="text" name="feedback"
+                    value="Type feedback here"></textarea>
+                <br>
+                <input class=button value="submit" type="Submit">
+
+            </form>
+        </div>
+    </a>
+</body>
+
+</html>

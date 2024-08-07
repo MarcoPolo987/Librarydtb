@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav main-nav">
+            <a href="{{ url_for('index') }}" class="link" rel="stylesheet" type="text/css">
+                Homepage
+            </a>
+            <a href="{{ url_for('userlogin') }}" class="link">Login</a>
+            <a href="{{ url_for('catalogue') }}" class="link" rel="stylesheet" type="text/css">Catalogue</a>
+            <a href="{{ url_for('checkout') }}" class="link" rel="stylesheet" type="text/css">
+                Checkout
+            </a>
+        </nav>
+    </header>
+
+    <table border="1">
+        {% for user in userDetails %}
+        <tr>
+            <td>{{user[1]}}</td>
+            <td>{{user[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>
